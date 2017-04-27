@@ -1,0 +1,40 @@
+<ul class="head_menu">
+  <li>
+    <h1><%= @category %></h1>
+  </li><!--
+  --><li>
+    <form action="/contacts/<%= params[:category] %>/delete" method="post">
+      <input type="submit" value="Delete Category" />
+    </form>
+  </li>
+</ul>
+<ul>
+  <% if @sub_list %>
+    <% @sub_list.each do |contact, info| %>
+      <li class="name">
+        <dl>
+          <dt class="col">
+            <a href="/contacts/<%= params[:category] %>/<%= contact %>"><%= info[:name] %></a>
+          </dt><!--
+          --><dd class="col">
+            <form action="/contacts/<%= params[:category] %>/<%= contact %>/delete" method="post">
+              <input type="submit" value="Delete Contact" />
+            </form>
+          </dd>
+        </dl>
+      </li>
+    <% end %>
+  <% end %>
+</ul>
+
+<ul class="foot_menu">
+  <li>
+  </li><!--
+  --><li>
+    <a class="btn" href="/contacts/<%= params[:category] %>/add">Add New Contact</a>
+  </li>
+</ul>
+
+<div class="outside">
+  <a class="btn" href="/">Main Menu</a>
+</div>

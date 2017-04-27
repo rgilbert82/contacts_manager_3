@@ -1,0 +1,17 @@
+<div class="head_menu center">
+  <h1>All Contacts</h1>
+</div>
+
+<ul>
+  <% @list.each do |category, contact| %>
+    <% contact.each do |person, info| %>
+      <li class="center"><a href="/contacts/<%= category %>/<%= person %>"><%= info[:name] %></a></li>
+    <% end %>
+  <% end %>
+</ul>
+
+<div class="foot_menu"></div>
+
+<div class="outside">
+  <a class="btn" href="/">Main Menu</a>
+</div>

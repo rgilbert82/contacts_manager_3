@@ -1,0 +1,23 @@
+<div class="head_menu center">
+  <h1>Contacts</h1>
+</div>
+
+<div>
+  <ul>
+    <% @list.each_key do |category| %>
+      <li class="cat center">
+        <a href="/contacts/<%= category %>"><%= category.capitalize.gsub("+", " ") %></a>
+      </li>
+    <% end %>
+    <li class="cat center"><a href="/contacts/all">All Contacts</a></li>
+  </ul>
+</div>
+
+<div class="foot_menu">
+  <form class="add_new" action="/add_category" method="post">
+    <dl>
+      <dt class="center"><input type="text" name="new_category" id="new_category" /></dt><!--
+      --><dd class="center"><input type="submit" value="Add New Category" /></dd>
+    </dl>
+  </form>
+</div>

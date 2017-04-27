@@ -1,0 +1,185 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
+#wrapper {
+  position: relative;
+  padding: 50px 100px;
+  min-height: 100%;
+  font: normal 20px Helvetica, Arial, sans-serif;
+  line-height: 150%;
+  background: linear-gradient(135deg, #555, dodgerblue) no-repeat;
+}
+
+main {
+  width: 600px;
+  height: auto;
+  padding: 25px;
+  border: 5px solid dodgerblue;
+  background-color: #fff;
+  border-radius: 15px;
+}
+
+.col {
+  display: inline-block;
+  width: 50%;
+}
+
+a {
+  text-decoration: none;
+  color: #555;
+}
+
+a:hover {
+  color: blue;
+}
+
+h1 {
+  padding-bottom: 10px;
+  color: dodgerblue;
+  font-size: 30px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  font-size: 16px;
+  padding: 0 10px;
+  line-height: 150%;
+  border-radius: 5px;
+}
+
+input[type="submit"],
+.btn {
+  width: 150px;
+  text-align: center;
+  display: inline-block;
+  padding: 5px;
+  margin-top: 10px;
+  background-color: dodgerblue;
+  color: #fff;
+  font: normal 16px Helvetica, Arial, sans-serif;
+  border-style: none;
+  border-radius: 5px;
+}
+
+input[type="submit"]:hover,
+.btn:hover {
+  background-color: blue;
+}
+
+.btn:hover {
+  color: #fff;
+}
+
+.foot_menu {
+  margin-top: 40px;
+  padding-top: 10px;
+  border-top: 2px solid dodgerblue;
+}
+
+.head_menu {
+  margin-bottom: 40px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid dodgerblue;
+}
+
+.foot_menu li,
+.foot_menu dt,
+.foot_menu dd {
+  display: inline-block;
+  width: 50%;
+}
+
+.head_menu li {
+  display: inline-block;
+  width: 50%;
+}
+
+.outside {
+  position: absolute;
+  top: 75px;
+  left: 725px;
+}
+
+.outside2 {
+  position: absolute;
+  top: 125px;
+  left: 725px;
+}
+
+.outside .btn,
+.outside2 .btn,
+.message {
+  background-color: #fff;
+  border: 5px solid dodgerblue;
+  color: dodgerblue;
+  font-weight: bold;
+}
+
+.message {
+  position: relative;
+  top: -60px;
+  left: 0;
+  margin-bottom: -40px;
+  font-variant: small-caps;
+  text-align: center;
+}
+
+.error {
+  border: 5px solid tomato;
+  color: tomato;
+}
+
+.outside .btn:hover,
+.outside2 .btn:hover {
+  color: #fff;
+  background-color: blue;
+}
+
+.center {
+  text-align: center;
+}
+
+.contact dt {
+  color: dodgerblue;
+  font-weight: bolder;
+  font-variant: small-caps;
+  letter-spacing: 2px;
+}
+
+.contact dd,
+.name dt,
+.cat a {
+  color: #555;
+  letter-spacing: 2px;
+}
+
+.cat a:hover {
+  color: blue;
+}
+
+.pad_top {
+  padding-top: 25px;
+}
+
+.pad_both dd {
+  padding: 15px 0;
+}
+
+main,
+.message,
+.outside,
+.outside2 {
+  box-shadow: 0 10px 10px #444;
+}

@@ -1,0 +1,27 @@
+<form action="/contacts/<%= params[:category] %>/add" method="post">
+  <dl class="name pad_both">
+    <dt class="center"><label for="name">Name</label></dt>
+    <dd class="center"><input type="text" name="name" id="name" required/></dd>
+  </dl>
+  <dl class="name pad_both">
+    <dt class="center"><label for="email">Email</label></dt>
+    <dd class="center"><input type="email" name="email" id="email"/></dd>
+  </dl>
+  <dl class="name pad_both">
+    <dt class="center"><label for="phone">Phone</label></dt>
+    <dd class="center"><input type="tel" name="phone" id="phone"/></dd>
+  </dl>
+  <dl>
+    <dt class="center pad_top">
+      <input type="submit" value="Add Contact" />
+    </dt>
+  </dl>
+</form>
+
+<div class="outside">
+  <a class="btn" href="/">Main Menu</a>
+</div>
+
+<div class="outside2">
+  <a class="btn" href="/contacts/<%= params[:category] %>"><%= @category %></a>
+</div>

@@ -1,0 +1,25 @@
+<div class="head_menu center">
+  <h1><%= @contact_info[:name] %></h1>
+</div>
+
+<% @contact_info.each do |k, v| %>
+  <dl class="contact">
+    <dt class="center"><%= k %></dt>
+    <dd class="center"><%= v %></dd>
+  </dl>
+<% end %>
+
+<ul class="foot_menu center">
+  <li class="center">
+    <a class="btn" href="/contacts/<%= params[:category] %>/<%= params[:contact] %>/edit">Edit Contact</a>
+  </li>
+
+</ul>
+
+<div class="outside">
+  <a class="btn" href="/">Main Menu</a>
+</div>
+
+<div class="outside2">
+  <a class="btn" href="/contacts/<%= params[:category] %>"><%= @category %></a>
+</div>

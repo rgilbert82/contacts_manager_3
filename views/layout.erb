@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <title>Contact List</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/stylesheets/whitespace-reset.css">
+    <link rel="stylesheet" href="/stylesheets/contact.css">
+  </head>
+  <body>
+    <div id="wrapper">
+      <main>
+        <% if session[:success] %>
+          <p class="message success"><%= session.delete(:success) %></p>
+        <% end %>
+
+        <% if session[:error] %>
+          <p class="message error"><%= session.delete(:error) %></p>
+        <% end %>
+
+        <%= yield %>
+      </main>
+    </div>
+  </body>
+</html>

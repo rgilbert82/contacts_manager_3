@@ -1,0 +1,29 @@
+---
+friends:
+  jane+doe:
+    :name: Jane Doe
+    :email: jane_d@gmail.com
+    :phone: 123-5678
+  bob+smith:
+    :name: Bob Smith
+    :email: bob@bob.com
+    :phone: 333-3333
+family:
+  mom:
+    :name: Mom
+    :email: mom@mom.com
+    :phone: 123-4567
+  dad:
+    :name: Dad
+    :email: dad@dad.com
+    :phone: 444-4445
+work:
+  boss:
+    :name: Boss
+    :email: bossy@gmail.com
+    :phone: 777-8889
+school:
+  mr+jones:
+    :name: Mr Jones
+    :email: jones@jones.com
+    :phone: 123-4567

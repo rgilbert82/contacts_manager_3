@@ -1,0 +1,25 @@
+<form action="/contacts/<%= params[:category] %>/<%= params[:contact] %>/edit" method="post">
+  <dl class="name pad_both">
+    <dt class="center"><label for="name">Name</label></dt>
+    <dd class="center"><input type="text" name="name" id="name" value="<%= @contact_info[:name] %>" required/></dd>
+  </dl>
+  <dl class="name pad_both">
+    <dt class="center"><label for="email">Email</label></dt>
+    <dd class="center"><input type="email" name="email" id="email" value="<%= @contact_info[:email] %>"/></dd>
+  </dl>
+  <dl class="name pad_both">
+    <dt class="center"><label for="phone">Phone</label></dt>
+    <dd class="center"><input type="tel" name="phone" id="phone" value="<%= @contact_info[:phone] %>"/></dd>
+  </dl>
+  <dt class="center pad_top">
+    <input type="submit" value="Edit Contact" />
+  </dt>
+</form>
+
+<div class="outside">
+  <a class="btn" href="/">Main Menu</a>
+</div>
+
+<div class="outside2">
+  <a class="btn" href="/contacts/<%= params[:category] %>"><%= @category %></a>
+</div>
